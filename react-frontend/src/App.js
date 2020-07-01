@@ -29,7 +29,7 @@ function App() {
   const [showModalNew, setShowModalNew] = useState(false)
 
   /* 
-  the flow of my stuff is as such
+  the flow of posts array to what is actually rendered is as such
 
   posts (list of all posts) 
     -> filterlist (if there is any filter (tag, status, type) applied)
@@ -41,7 +41,7 @@ function App() {
 
   useEffect(() => {
     postsService.getAll().then((res) => {
-      setPosts(res)
+      setPosts(res.reverse())
       setTimeout(() => setLoading(false), 1500);
     })
     document.getElementById('tyea').focus()
