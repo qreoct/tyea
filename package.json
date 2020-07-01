@@ -1,23 +1,47 @@
 {
-  "name": "tyea-server",
+  "name": "TYEA",
   "version": "1.0.0",
-  "description": "server for tyea",
-  "main": "index.js",
-  "scripts": {
-    "start": "cross-env NODE_ENV=production node index.js",
-    "dev": "cross-env NODE_ENV=development nodemon index.js"
-  },
-  "author": "qreoct",
-  "license": "MIT",
+  "description": "A virtual sticky note wall",
+  "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
     "cors": "^2.8.5",
-    "cross-env": "^7.0.2",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-async-errors": "^3.1.1",
-    "mongoose": "^5.9.9"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-loading": "^2.0.3",
+    "react-scripts": "3.4.1",
+    "typicons.font": "^2.0.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "nodemon": "^2.0.3"
-  }
+    "gh-pages": "^3.1.0",
+    "json-server": "^0.16.1"
+  },
+  "proxy": "http://localhost:3003/",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "homepage": "https://qreoct.github.io/tyea"
 }
