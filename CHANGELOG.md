@@ -44,6 +44,9 @@
 - made icons and logo 
 - cleaned up the repos and ready to show on github
 
+**2020/07/13**
+- add linebreak for post-comments in css
+
 ## Origin
 
 I completed the fullstackopen course to learn React, and I need a project to work on. I saw this idea on c2 wiki of this person that writes his dissociated thoughts on a post it note, sticking it up on a wall and forming a collection of serendipitous inspiration. ![c2 wiki image](c2.jpg)

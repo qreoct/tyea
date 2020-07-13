@@ -259,6 +259,10 @@ a {
 	word-break: break-word;
 }
 
+.post-comment{
+	white-space: pre-line;
+}
+
 .post-linkarea:hover .post-linktitle{
 	background-color: var(--f_low);
 }
