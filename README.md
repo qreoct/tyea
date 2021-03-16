@@ -6,7 +6,7 @@
 
 Tyea is a digital wall for sticky notes. It is designed to be quickly accessible and a safe place to store ideas and links that can be easily searchable when the time comes. 
 
-Tyea [(贴)](https://en.wiktionary.org/wiki/%E8%B2%BC#Mandarin) is the Chinese word for "to stick on to". After years of sporadic bookmarking, sending emails, and WhatsApp messages to myself in an attempt to save content that I enjoyed, I wanted a tool that achieves this task for me in a centralized location. Use it as a personal knowledge base. Tyea is built with React to practice building an application that I could use.
+Tyea [(贴)](https://en.wiktionary.org/wiki/%E8%B2%BC#Mandarin) is the Chinese word for "to stick on to". After years of sporadic bookmarking, sending emails and WhatsApp messages to myself in an attempt to save content that I enjoyed, I wanted a tool that achieves this task for me in a centralized location. Use it as a personal knowledge base. Tyea is built with React to practice building an application that I could use.
 
 You can:
 - Add posts with a url, tags, comments, and mark the type of content.
