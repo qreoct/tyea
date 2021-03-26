@@ -62,6 +62,7 @@ Branch ```gh-pages-dev``` houses the frontend code for gh-pages.
 - Auto-add comment if you forget to click the 'add' button. Happens quite often actually.
 - Ability to turn links in comments to hyperlinks
 - Refactor CSS for New Post to work better with widescreen monitors (maybe have the comment field automatically expand?)
+- Edit button for existing posts
 
 Feel free to fork/comment/pull request etc. The code is licensed under MIT.
 
