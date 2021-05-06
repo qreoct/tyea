@@ -39,7 +39,15 @@ Branch ```master``` contains the directory ```react-frontend``` which is a npm p
 npm run build
 ```
 
-to get a ```build``` directory. Put this ```build``` directory in the root of this repo and push to heroku in order to update with frontend changes. For all backend changes, the root directory contains the backend npm project.  
+to get a ```build``` directory. Put this ```build``` directory in the root of this repo and push to heroku in order to update with frontend changes. 
+
+For all backend changes, the root directory contains the backend npm project. Create a ```.env``` file with the following structure:
+
+```
+MONGODB_DEV_URI='...'
+MONGODB_URI='...'
+PORT=...
+```
 
 Branch ```gh-pages``` houses the static content for gh-pages release.
 
