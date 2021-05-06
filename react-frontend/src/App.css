@@ -263,6 +263,10 @@ a {
 	white-space: pre-line;
 }
 
+.post-comment > span > a:hover {
+	background-color: var(--f_low);
+}
+
 .post-linkarea:hover .post-linktitle{
 	background-color: var(--f_low);
 }
