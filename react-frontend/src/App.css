@@ -377,13 +377,13 @@ a {
 
 .modal-new-formarea {
 	margin: 10px;
-	display: table;
+	display: flex;
+	flex-direction: column;
 }
 
 .modal-new-formtitle, .modal-new-forminput {
 	margin: 5px;
 	margin-left: 15px;
-	display: table-cell;
 }
 
 .modal-new-forminput {
@@ -408,12 +408,20 @@ a {
 	cursor: pointer
 }
 
+
+@media (min-width: 1366px) {
+	body .modal-new-formtitle {
+		width: 15%;
+	}
+}
+
 .modal-new-formtitle {
 	text-align: right;
+	width: 30%;
 }
 
 .modal-new-formrow {
-	display: table-row;
+	display: inherit;
 }
 
 .modal-new-typeicon {
@@ -423,6 +431,10 @@ a {
 
 .modal-new-typeradio {
 	margin-left: 15px;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+	width: 85%;
 }
 
 /* HIDE RADIO */
@@ -455,6 +467,7 @@ a {
   padding: 5px 5px 0;
   margin: 5px;
   margin-left: 15px;
+  width: 85%;
 }
 
 .input-tag textarea, .input-tag input{
