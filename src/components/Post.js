@@ -137,7 +137,7 @@ const Post = ({props, setFilter, posts, setPosts}) => {
 					<div className="post-row" key={c}>
 						<div className="post-comment">
 							<i className="typcn typcn-message"> </i>
-							{c}
+							<span dangerouslySetInnerHTML={{__html: Util.urlify(c)}} />
 						</div>
 					</div> 
 					) 

@@ -62,7 +62,7 @@ const ModalNew = ({setShowModalNew, showModalNew, setInput_Focused, input_focuse
 		postsService.create(state).then(
 			(res) => {
 				console.log("MODALNEW res is:", res)
-				setPosts([...posts, res])
+				setPosts([res, ...posts])
 			}
 		);
 		setState({

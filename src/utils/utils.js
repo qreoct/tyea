@@ -60,4 +60,17 @@ const reorder = (arr, columns) => {
   return out
 }
 
-export default { extractHostname, extractRootDomain, reorder }
+// Gleaned from https://stackoverflow.com/a/25821576
+const urlify = (text) => {
+  var urlRegex = /(((https?:\/\/)|(www\.))[^\s]+)/g;
+
+  return text.replace(urlRegex, function(url,b,c) {
+      var url2 = (c === 'www.') ? 'http://' + url : url;
+      if (url2.slice(-1) === "." || url2.slice(-1) === "!" || url2.slice(-1) === "?" || url2.slice(-1) === ",") {
+        url2 = url2.slice(0, -1); // remove trailing punctuation
+      }
+      return '<a href="' + url2 + '" target="_blank">' + url + '</a>';
+  }) 
+}
+
+export default { extractHostname, extractRootDomain, reorder, urlify }

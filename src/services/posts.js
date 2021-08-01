@@ -18,32 +18,13 @@ const getAll = () => {
 }
 
 const create = async newObj => {
-	const date = new Date()
-	const formattedDate = date.toLocaleDateString("en-GB", {
-					year: "numeric",
-					month: "2-digit",
-					day: "2-digit",
-					}).split('/').reverse().join('-')
-	const newPost = {
-		...newObj,
-		status: "todo",
-		date: formattedDate
-	}
-	return newPost
+	const res = await axios.post(baseUrl, newObj)
+	return res.data
 }
 
 const update = async (id, newObj) => {
-	let newStatus = ""
-	if (newObj.status === "todo"){
-		newStatus = "done"
-	}else{
-		newStatus = "todo"
-	}
-	const newPost = {
-		...newObj,
-		status: newStatus
-	}
-	return newPost
+	const res = await axios.put(`${baseUrl}/${id}`, newObj)
+	return res.data
 }
 
 export default { getAll, create, update }
