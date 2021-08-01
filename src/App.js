@@ -41,7 +41,7 @@ function App() {
 
   useEffect(() => {
     postsService.getAll().then((res) => {
-      setPosts(res.reverse())
+      setPosts(res)
       setTimeout(() => setLoading(false), 1500);
     })
     document.getElementById('tyea').focus()
