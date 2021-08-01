@@ -36,16 +36,16 @@ const ModalAbout = ({setShowModalAbout, showModalAbout, setInput_Focused, posts}
 				<em> <p> Virtual note board </p> </em>
 				<p> Tyea is a virtual sticky note board. Use it to store links to content
 					that you value. Tyea aims to be lightweight and a pleasure to use. </p>
-				<p> Licensed by MIT </p>
-				<a href="https://github.com/qreoct/tyea"> view source code on GitHub </a>
-				<br />
+				<p> Tyea is open sourced with the MIT license. &nbsp;
+				<a href="https://github.com/qreoct/tyea">View source code on GitHub </a></p>
+				<p> - </p>
 				<a className="modal-about-export" 
 					href={`data:text/json;charset=utf-8,${encodeURIComponent(
 						JSON.stringify({posts})
 						)}`}
 					download="tyea-exports.json">
 				 	export posts (JSON) </a>
-				<p> v.1.0.0 &copy; 2020 </p>
+				<p> v.1.0.0 | 2021 </p>
 				</div>
 			</div>
 		</div>
