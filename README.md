@@ -49,9 +49,13 @@ MONGODB_URI='...'
 PORT=...
 ```
 
+### Github pages
+
 Branch ```gh-pages``` houses the static content for gh-pages release.
 
 Branch ```gh-pages-dev``` houses the frontend code for gh-pages.
+
+**Remember to unlink the API calls from gh-pages static instance!**
 
 ## Dependencies
 - [Typicons](https://www.s-ings.com/typicons/) (for icons)
